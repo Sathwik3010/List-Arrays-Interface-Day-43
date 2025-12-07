@@ -1,0 +1,136 @@
+1. it is the child interface of collections.
+2. it is an index based.
+3. it allows both homogeneous and heterogeneous Objects.
+4. it allows duplicate elements.
+5. it allows any number of null elements.
+6. it is not following sorting order.
+7. it follows insertion order.
+
+List interface defines the following specific methods
+======================================================
+1. Boolean add(int index, Object o)
+2. public Boolean addAll(int index, Collection c);
+3. public Object get(int index);
+4. public Object remove(int index);
+5. public Object set(int index, Object new);
+6. public int indexOf(Object o);
+7. public int lastIndexOf(Object o);
+
+ArrayList
+=========
+1. it was introduced in JDK 1.2 v.
+2. it Is the implementation class to List Interface.
+3. it is not deprecated/legacy collection.
+4. it is index based. it allows all the elements as per indexing.
+5. it follows insertion order.
+6. it doesn't follow sorting order.
+7. it allows heterogeneous element.
+8. it allows duplicate elements.
+9. it allows any number of null elements.
+10. it is not synchronized a collection.
+11. it allows more than 1 thread at a time.
+12. it allows parallel execution over Threads.
+13. it reduces application execution time.
+14. it increases application performance.
+15. it doesn't give guarantee for data consistency.
+16. it is not thread safe.
+17. it is suggestable when we want to perform a frequent retrieval operations.
+18. it is default capacity is 10 elements.
+19. its incremental capacity is (currentCapacity *3/2)+1.
+20. it is internal data structure is "Resizable Array".
+
+Linked list
+===========
+1. it was introduced in JDK 1.2 v.
+2. it Is the implementation class to List Interface.
+3. it is not deprecated/legacy collection.
+4. it is index based. it allows all the elements as per indexing.
+5. it follows insertion order.
+6. it doesn't follow sorting order.
+7. it allows heterogeneous element.
+8. it allows duplicate elements.
+9. it allows any number of null elements.
+10. it is not synchronized a collection.
+11. it allows more than 1 thread at a time.
+12. it allows parallel execution over Threads.
+13. it reduces application execution time.
+14. it increases application performance.
+15. it doesn't give guarantee for data consistency.
+16. it is not thread safe.
+17. it is mainly used for frequent insertions and deletions
+18. it's internal data structure double linked list.
+===================================================================
+1. public void addFirst(Object obj)
+2. public void addLast(Object obj)
+3. public Object getFirst();
+4. public Object getLast();
+5. public Object removeFirst();
+6. public Object removeLast();
+
+Vector List
+============
+1. Introduced In JDK 1.0 Version
+2. it is a legacy collection.
+3. it is an implementation class to list interface.
+4. it is index based, it allows all elements as per indexing
+5. it follows insertion order.
+6. it doesn't follow sorting order.
+7. it allows more than one null elements.
+9. it allows heterogeneous elements.
+10. it is a synchronized collection.
+11. it allows only one thread at a time.
+12. it follows sequential execution.
+13. it increase application execution time.
+14. it reduces application performance.
+15. it gives guarantee for data consistency
+16. it is a thread safe collection
+17. it is suggestable when we have frequent retrieval operations.
+18. its initial capacity Is 10 elements.
+19. its incremental capacity is new capacity =2*current capacity.
+20. its internal data structure resizable array.
+
+stack List
+==========
+1. it was introduced in jdk 1.0 v
+2. it Is a legacy collection
+3. it is a sub class of vector.
+4. to manage elements stack is following LIFO
+
+constructors
+-----------
+1.public stack()
+it is able to create empty stack Object.
+
+methods
+---------
+1. public void push(Object obj);
+it is able to add the specified element to stack as the top most element.
+2. public object pop()
+it is able to read and remove the top of the stack.
+3. public Object peek();
+it is able to read the top of the stack.
+4. public int search(Object obj);
+it is able to search for the specified element In the stack if the element exists in stack then its position value will be returned. if the element doesn't exists in the stack then search method will return -1 value.
+
+Cursors
+=======
+if we want to get objects one by one from the collection then we should go for cursor.
+there are 3 types of cursors available in java.
+1.Enumeration
+2. Iterator.
+3. ListIterator
+====================================================================================
+
+Enumeration 
+------------
+we can use enumeration to get objects one by one from the legacy collection objects.
+2. we can create enumeration object by using elements() method.
+public Enumeration elements();
+
+Enumeration e=v.elements();
+where v is the vector Object.
+
+Enumeration interface defines the following two methods.
+
+1. public Boolean hasMoreElements(); // whether elements are there or not 
+2. public Object nextElements();// to print the elements if they are present
